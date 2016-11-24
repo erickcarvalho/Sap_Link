@@ -22,11 +22,6 @@ PARAMETERS: p_mode  TYPE rfpdo-allgazmd DEFAULT &apos;N&apos;, &quot;DISPLAY ALL
             p_doc1  TYPE bkpf-belnr,
             p_doc2  TYPE bkpf-belnr.
 
-* vou colocar uns comentarios aqui
-
-
-DATA: l_loukura TYPE string .
-
 DATA: l_auglv   TYPE t041a-auglv   VALUE &apos;UMBUCHNG&apos;, &quot;Posting with Clearing
       l_tcode   TYPE sy-tcode      VALUE &apos;FB05&apos; ,    &quot;You get an error with any other value
       l_sgfunct TYPE rfipi-sgfunct VALUE &apos;C&apos;.        &quot;Post immediately
@@ -35,9 +30,6 @@ DATA: lt_blntab  TYPE STANDARD TABLE OF blntab  WITH HEADER LINE,
       lt_ftclear TYPE STANDARD TABLE OF ftclear WITH HEADER LINE,
       lt_ftpost  TYPE STANDARD TABLE OF ftpost  WITH HEADER LINE,
       lt_fttax   TYPE STANDARD TABLE OF fttax   WITH HEADER LINE.
-
-
-l_loukura = &apos;Loukura&apos;.
 
 *batch input values
 lt_ftpost-stype = &apos;K&apos;.&quot;Header
