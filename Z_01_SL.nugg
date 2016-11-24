@@ -31,6 +31,14 @@ DATA: lt_blntab  TYPE STANDARD TABLE OF blntab  WITH HEADER LINE,
       lt_ftpost  TYPE STANDARD TABLE OF ftpost  WITH HEADER LINE,
       lt_fttax   TYPE STANDARD TABLE OF fttax   WITH HEADER LINE.
 
+* vou colocar uns comentarios aqui
+
+
+DATA: l_loukura TYPE string .
+
+
+l_loukura = &apos;Loucura&apos;.
+
 *batch input values
 lt_ftpost-stype = &apos;K&apos;.&quot;Header
 lt_ftpost-count = 1.  &quot;number of Dynpro
